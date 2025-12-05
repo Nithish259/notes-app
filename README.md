@@ -1,16 +1,46 @@
-# React + Vite
+📒 Notes Manager — React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and efficient Notes Management Application built using React, TailwindCSS, and localStorage.
+This app allows users to create, view, edit, pin, archive, and manage notes with an intuitive UI.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📝 Notes Creation & Listing
 
-## React Compiler
+Create new notes with title and description
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Display notes in a clean card-based layout
 
-## Expanding the ESLint configuration
+View full note details through a modal or expanded view
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+All notes are stored in localStorage for persistence
+
+🔍 Search & Filter
+
+Search notes instantly by title or description
+
+Add tags to notes
+
+Filter notes based on selected tags
+
+📌 Pin, Archive & Trash
+
+Pin important notes to keep them at the top
+
+Archive notes you want to hide but not delete
+
+Trash system for deleted notes:
+
+Restore notes from trash
+
+Permanently delete notes
+
+👤 User Actions
+
+Create, view, edit, and delete notes
+
+Pin and archive for better organization
+
+Move notes to trash and recover them later
+
+Filter by tags and search by keywords
