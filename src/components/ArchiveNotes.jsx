@@ -12,7 +12,9 @@ function ArchiveNotes() {
             {archiveNotes.map((note) => (
               <div
                 key={note.id}
-                className="bg-white p-4 rounded-xl border border-gray-300 shadow hover:shadow-md transition"
+                className={`${
+                  note.cardColor ? note.cardColor : "bg-white"
+                } p-4 rounded-xl border border-gray-300 shadow hover:shadow-md transition`}
               >
                 <div className="flex items-center justify-between">
                   <h2 className="font-semibold text-lg">{note.title}</h2>
@@ -25,7 +27,21 @@ function ArchiveNotes() {
                   </button>
                 </div>
 
-                <p className="mt-2 text-gray-700">{note.description}</p>
+                <p className="mt-2 text-gray-700 line-clamp-3">
+                  {note.description}
+                </p>
+                {note.tags?.length > 0 && (
+                  <div className="flex flex-wrap gap-1 mt-2">
+                    {note.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className="text-xs  bg-gray-100 px-2 py-1 rounded-md"
+                      >
+                        #{tag}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
           </div>
