@@ -52,6 +52,14 @@ function Navbar() {
           <i className="fa-solid fa-pen-to-square"></i> Add Note
         </button>
       </div>
+      <button
+        className={`${
+          isTrashPage || isArchivePage ? "visible" : "hidden"
+        } bg-blue-600 hover:bg-blue-700 px-5 h-10 text-white rounded-md shadow flex items-center justify-center gap-2`}
+        onClick={() => navigate("/")}
+      >
+        <i className="fa-solid fa-arrow-left"></i> Back
+      </button>
     </nav>
   );
 }
